@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NXTEE!!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        
+        .navbar {
+            background-color: #222;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar .brand {
+            font-size: 1.7em;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .navbar nav {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        .navbar nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav a:hover {
+            color: #ffd700;
+        }
+
+     
+        .hero {
+            background-image: url('p_fa33e640-9489-11ef-b20c-2a914695a946_wm.png');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero p {
+            font-size: 1em;
+            max-width: 600px;
+            margin: 10px auto 25px;
+            line-height: 1.5;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn {
+            background-color: #ffd700;
+            color: #333;
+            padding: 12px 25px;
+            border: none;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            color: #ffd700;
+        }
+
+  
+        .products {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .products h2 {
+            font-size: 2.3em;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .product-grid {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 220px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .product-card h3 {
+            margin: 15px 0;
+            font-size: 1.3em;
+            color: #333;
+        }
+
+      
+        .about {
+            padding: 60px 20px;
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.3em;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+            color: #555;
+        }
+
+      
+        .contact {
+            padding: 60px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.3em;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .contact p, .contact a {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .contact a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color: #ffd700;
+        }
+
+      
+        .footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+  
+    <header class="navbar">
+        <div class="container">
+            <h1 class="brand">NXTEE!!</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+  
+    <section class="hero">
+        <div class="hero-content">
+            <h3>NXTEE!!: Designed with purpose, worn with pride</h3>
+            <p>Premium quality, stylish designs, and perfect fit. Find the essence of your style with NXTEE!!.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+  
+    <section id="products" class="products">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <a href="mens.html">
+                    <img src="Screenshot 2024-10-28 000216.png" alt="Men's Wear">
+                    <h3>Men's Attire</h3>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="women's.html">
+                    <img src="Screenshot 2024-10-28 000317.png" alt="Women's Wear">
+                    <h3>Women's Attire</h3>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="accessories.html">
+                    <img src="Screenshot 2024-10-28 022208.png" alt="Accessories">
+                    <h3>Accessories</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>NXTEE!! is dedicated to providing high-quality, stylish clothing that meets your unique sense of style and comfort. With a commitment to sustainability and innovative designs, we strive to make fashion accessible and meaningful.</p>
+    </section>
+
+   
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out with any questions or feedback!</p>
+        <p><strong>Address:</strong> Bh2,Lovely Professional University,Phagwara,punjab</p>
+        <p><strong>Phone:</strong> 9390455709</p>
+        <p><strong>Email:</strong> <a href="mailto:mohammedshowkath83@gmail.com">contact@nxtee.com</a></p>
+    </section>
+
+   
+    <footer class="footer">
+        <p>&copy; 2024 NXTEE!! Clothing Brand. All rights reserved.</p

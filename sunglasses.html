@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Watches Collection | NXTEE!!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+       
+        .navbar {
+            background-color: #222;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar .brand {
+            font-size: 1.7em;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .navbar nav {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        .navbar nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav a:hover {
+            color: #ffd700;
+        }
+
+        
+        .collection {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .collection h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+       
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #222;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .buy-button:hover {
+            background-color: #444;
+        }
+
+        
+        .footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header class="navbar">
+        <div class="container">
+            <h1 class="brand">NXTEE!!</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="mens.html">Men's Wear</a>
+                <a href="women's.html">Women's Wear</a>
+                <a href="accesories.html">Accessories</a>
+            </nav>
+        </div>
+    </header>
+
+   
+    <section class="collection">
+        <h2>Stylish Watches Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="cf-flow-2o76UB9pXlPiNUFeoq2W4zGxBbm.png" alt="Sunglass 1">
+                <h3>NXTEE!! Glasses</h3>
+                <p>₹4,800.00</p>
+                <a href="sunglasses1.html" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="cf-flow-2o76UBsJNBjTsgcT6Yj07X1deMI.png" alt="Sunglass 2">
+                <h3>NXTEE!! Glasses</h3>
+                <p>₹3,200.00</p>
+                <a href="sunglasses2.html" class="buy-button">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="cf-flow-2o76La8PCtYYu2idp7WmQ6BTyH3.png" alt="Sunglass 3">
+                <h3>NXTEE!! Glasses</h3>
+                <p>₹5,600.00</p>
+                <a href="sunglasses3.html" class="buy-button">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <p>&copy; 2024 NXTEE!!. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
